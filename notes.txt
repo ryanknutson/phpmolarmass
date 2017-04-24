@@ -1,0 +1,17 @@
+Regex to split input
+[A-Z][a-z]?\d*|\((?:[^()]*(?:\(.*\))?[^()]*)+\)\d+
+
+Regex to select individual elements
+([A-z][a-z]|[A-Z])\d?
+
+Regex to select parenthesis and number after
+\(([^\)]+)\)([1-9]+)+
+
+
+
+	After the regex selects the item with paranthesis, then take the number after and apply it to all the elements
+
+
+
+Regex to select elements without a number behind
+[A-z][^0-9](?!\d)
